@@ -482,7 +482,7 @@ int dtCrowd::getAgentCount() const
 /// @par
 /// 
 /// Agents in the pool may not be in use.  Check #dtCrowdAgent.active before using the returned object.
-const dtCrowdAgent* dtCrowd::getAgent(const int idx)
+dtCrowdAgent* dtCrowd::getAgent(const int idx)
 {
 	if (idx < 0 || idx >= m_maxAgents)
 		return 0;

@@ -194,11 +194,11 @@ private:
 	dtTileCacheObstacle* m_obstacles;
 	dtTileCacheObstacle* m_nextFreeObstacle;
 	
-	static const int MAX_REQUESTS = 64;
+	static const int MAX_REQUESTS = 512;
 	ObstacleRequest m_reqs[MAX_REQUESTS];
 	int m_nreqs;
 	
-	static const int MAX_UPDATE = 64;
+	static const int MAX_UPDATE = 512;
 	dtCompressedTileRef m_update[MAX_UPDATE];
 	int m_nupdate;
 	
