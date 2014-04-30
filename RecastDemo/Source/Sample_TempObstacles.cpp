@@ -1248,7 +1248,7 @@ bool Sample_TempObstacles::handleBuild()
 	tcparams.walkableClimb = m_agentMaxClimb;
 	tcparams.maxSimplificationError = m_edgeMaxError;
 	tcparams.maxTiles = tw*th*EXPECTED_LAYERS_PER_TILE;
-	tcparams.maxObstacles = 128;
+	tcparams.maxObstacles = 512;
 
 	dtFreeTileCache(m_tileCache);
 	
