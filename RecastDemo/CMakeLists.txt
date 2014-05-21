@@ -73,7 +73,7 @@ INCLUDE_DIRECTORIES(Include
 IF(XCODE)
 	ADD_EXECUTABLE(RecastDemo MACOSX_BUNDLE Source/SDLMain.m Include/SDLMain.h ${recastdemo_SRCS} ${recastdemo_HDRS})
 ELSE(XCODE)
-	ADD_EXECUTABLE(RecastDemo WIN32 ${recastdemo_SRCS} ${recastdemo_HDRS})
+	ADD_EXECUTABLE(RecastDemo WIN32 Source/SDLMain.m Include/SDLMain.h ${recastdemo_SRCS} ${recastdemo_HDRS})
 ENDIF(XCODE)
 
 TARGET_LINK_LIBRARIES(RecastDemo DebugUtils Detour DetourCrowd DetourTileCache Recast ${SDL_LIBRARY} ${OPENGL_LIBRARIES})
